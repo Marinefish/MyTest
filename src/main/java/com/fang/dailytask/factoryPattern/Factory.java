@@ -7,8 +7,6 @@ package com.fang.dailytask.factoryPattern;
  * Time: 23:42
  */
 public class Factory implements FactoryInf {
-
-
     @Override
     public ProductInf createProduct() {
         return new ProductA();
