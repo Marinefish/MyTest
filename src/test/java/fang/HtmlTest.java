@@ -20,8 +20,9 @@ import java.util.Set;
 public class HtmlTest {
     public static void main(String[] args) throws Exception{
         long var1 = System.currentTimeMillis();
-        final WebClient wc=new WebClient(BrowserVersion.getDefault());
-        URL link=new URL("http://www.amrkhaled.net/ar/section/1/6/%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A9");
+        final WebClient wc=new WebClient(BrowserVersion.FIREFOX_52);
+//        URL link=new URL("https://www.alarabiya.net/culture-and-art.html");
+        URL link=new URL("http://www.alroeya.ae/123142/");
         WebRequest request=new WebRequest(link);
 //        request.setAdditionalHeader("Referer", "http://radar2.net/Article-2.html");//设置请求报文头里的refer字段
         ////设置请求报文头里的User-Agent字段
@@ -59,11 +60,11 @@ public class HtmlTest {
 //            wc.getCookieManager().addCookie(i.next());
 //        }
 //        webClient.addRequestHeader("User-Agent","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36");
+        // 等待JS驱动dom完成获得还原后的网页
+        wc.waitForBackgroundJavaScript(1000);
         System.out.println(htmlPage.asXml());
 
 
-        // 等待JS驱动dom完成获得还原后的网页
-        wc.waitForBackgroundJavaScript(1000);
         System.out.println("-----------"+(System.currentTimeMillis()-var1)/1000+"--------");
 //        WebRequest request2=new WebRequest(link);
 //        HtmlPage htmlPage2 = wc.getPage(request2);
