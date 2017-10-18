@@ -19,5 +19,6 @@ public class ThreadJoin extends Thread{
             e.printStackTrace();
         }
         System.out.println(Thread.currentThread().getName()+"线程执行了"+sleepTime+"ms");
+
     }
 }

@@ -17,9 +17,15 @@ public class ThreadJoinTest {
         System.out.println("当前线程为："+Thread.currentThread().getName());
         ThreadJoin threadJoin = new ThreadJoin();
         threadJoin.start();
-        threadJoin.join(6000);
+        threadJoin.join(60);
         System.out.println("在threadJoin线程执行后执行");
-        System.out.println("共消耗时间"+(System.currentTimeMillis()-time)+"ms");
+        System.out.println("共消耗时间"+(System.currentTimeMillis()-time)+"ms,后面要sleep");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("sleep 5s 结束");
     }
 
 }
