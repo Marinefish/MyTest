@@ -26,8 +26,8 @@ public class HtmlTest {
         WebRequest request=new WebRequest(link);
 //        request.setAdditionalHeader("Referer", "http://radar2.net/Article-2.html");//设置请求报文头里的refer字段
         ////设置请求报文头里的User-Agent字段
-        request.setAdditionalHeader("User-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2");
-        //wc.addRequestHeader("User-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2");
+        request.setAdditionalHeader("UserWithNoOverrideRemoveAll-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2");
+        //wc.addRequestHeader("UserWithNoOverrideRemoveAll-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2");
         //wc.addRequestHeader和request.setAdditionalHeader功能应该是一样的。选择一个即可。
         //其他报文头字段可以根据需要添加
         // 1 启动JS
@@ -59,7 +59,7 @@ public class HtmlTest {
 //        {
 //            wc.getCookieManager().addCookie(i.next());
 //        }
-//        webClient.addRequestHeader("User-Agent","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36");
+//        webClient.addRequestHeader("UserWithNoOverrideRemoveAll-Agent","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36");
         // 等待JS驱动dom完成获得还原后的网页
         wc.waitForBackgroundJavaScript(1000);
         System.out.println(htmlPage.asXml());
