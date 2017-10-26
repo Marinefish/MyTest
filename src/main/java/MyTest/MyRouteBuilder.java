@@ -1,4 +1,4 @@
-package MyTest;
+package myTest;
 
 import org.apache.camel.builder.RouteBuilder;
 

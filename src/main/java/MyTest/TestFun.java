@@ -1,8 +1,4 @@
-package MyTest;
-
-import okhttp3.*;
-
-import java.io.InputStream;
+package myTest;
 
 /**
  * Author: fangxueshun

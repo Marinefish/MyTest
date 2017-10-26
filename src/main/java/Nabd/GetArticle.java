@@ -1,10 +1,9 @@
-package Nabd;
-import Nabd.domain.Article;
+package nabd;
+import nabd.domain.Article;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-import com.google.gson.reflect.TypeToken;
 import com.squareup.okhttp.*;
 import net.sf.json.JSON;
 import net.sf.json.xml.XMLSerializer;

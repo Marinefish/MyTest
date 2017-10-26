@@ -1,8 +1,8 @@
-package Nabd;
+package nabd;
 
-import Nabd.domain.Category;
-import Nabd.domain.Source;
-import Nabd.domain.SubCategory;
+import nabd.domain.Category;
+import nabd.domain.Source;
+import nabd.domain.SubCategory;
 import com.google.gson.*;
 import com.squareup.okhttp.*;
 

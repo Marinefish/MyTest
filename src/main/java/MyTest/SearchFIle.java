@@ -1,10 +1,8 @@
-package MyTest;
+package myTest;
 
-import Nabd.ReadWriteFileWithEncode;
+import nabd.ReadWriteFileWithEncode;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Author: fangxueshun

@@ -1,4 +1,4 @@
-package MyTest;
+package myTest;
 
 /**
  * Author: fangxueshun
