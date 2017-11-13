@@ -1,4 +1,4 @@
-package Nabd;
+package nabd;
 
 import java.io.*;
 

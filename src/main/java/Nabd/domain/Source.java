@@ -1,7 +1,4 @@
-package Nabd.domain;
-
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+package nabd.domain;
 
 import java.util.HashMap;
 import java.util.Map;

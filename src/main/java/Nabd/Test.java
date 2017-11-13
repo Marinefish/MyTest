@@ -1,6 +1,6 @@
-package Nabd;
+package nabd;
 
-import Nabd.domain.Article;
+import nabd.domain.Article;
 import com.google.gson.Gson;
 
 /**

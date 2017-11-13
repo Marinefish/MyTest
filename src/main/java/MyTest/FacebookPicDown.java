@@ -1,4 +1,4 @@
-package MyTest;
+package myTest;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -7,7 +7,6 @@ import com.google.gson.JsonParser;
 import com.squareup.okhttp.*;
 import org.springframework.util.StringUtils;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

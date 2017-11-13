@@ -1,8 +1,6 @@
-package MyTest;
+package myTest;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Author: fangxueshun

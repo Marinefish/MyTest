@@ -1,4 +1,4 @@
-package Nabd.domain;
+package nabd.domain;
 
 
 /**
